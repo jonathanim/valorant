@@ -1,8 +1,14 @@
 import React from 'react'
 
-const Maps = () => {
+const Maps = ({ maps }) => {
+
     return (
-        <div>Maps</div>
+        <div>
+            <h1 className='text-center'>All Maps</h1>
+            {maps.data.map(m => {
+                return <h1 key={m.uuid}>{m.displayName}</h1>
+            })}
+        </div>
     )
 }
 
