@@ -6,6 +6,7 @@ import Weapons from "./components/Weapons";
 import { useState, useEffect } from "react";
 import { Routes, Route } from 'react-router-dom'
 import axios from "axios";
+import CharacterDetails from "./components/CharacterDetails";
 
 function App() {
 
@@ -40,6 +41,7 @@ function App() {
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/characters" element={<Characters characters={characters} />} />
+        <Route path="/characters/:id" element={<CharacterDetails />} />
         <Route path="/maps" element={<Maps maps={maps} />} />
         <Route path="/weapons" element={<Weapons weapons={weapons} />} />
       </Routes>
