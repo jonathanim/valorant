@@ -1,12 +1,29 @@
-import React from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import CharacterCard from "./CharacterCard";
-const Characters = ({ characters }) => {
+import axios from "axios";
+import Loading from "./Loading";
+const Characters = () => {
+  const [characters, setCharacters] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const fetchCharacters = async () => {
+      const result = await axios.get("https://valorant-api.com/v1/agents");
+      setCharacters(result.data.data);
+      setLoading(false);
+    };
+    fetchCharacters();
+  }, []);
+
   return (
     <div className="container mx-auto">
-      <h1 className="text-center text-4xl mt-5">All Characters</h1>
+      <h1 className="text-center text-4xl my-5">
+        {" "}
+        {loading ? <Loading /> : "Characters"}
+      </h1>
       <div className="grid grid-cols-2 gap-5  md:grid-cols-4">
-        {characters.data
+        {characters
           .filter((char) => char.isPlayableCharacter === true)
           .sort(
             (a, b) =>

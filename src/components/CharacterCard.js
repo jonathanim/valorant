@@ -1,7 +1,6 @@
 import React from "react";
 
 const CharacterCard = ({ character }) => {
-  console.log(character);
   return (
     <div>
       <div className="card border-2 p-5 m-3">
