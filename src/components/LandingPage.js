@@ -14,7 +14,7 @@ const LandingPage = () => {
 
   return (
     <div className="container mx-auto ">
-      <h1 className="text-center text-4xl my-5">Welcome to VALOLIFE</h1>
+      <h1 className="text-center text-4xl my-5">Welcome to ValoStart</h1>
       <div className="grid items-center justify-center">
         <h2 className="text-center text-2xl my-2">Trailer #1</h2>
         <YouTube

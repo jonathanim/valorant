@@ -44,11 +44,6 @@ const CharacterDetails = () => {
     event.target.pauseVideo();
   };
 
-  useEffect(() => {
-    fetchCharacter();
-    setVideo(videos[character.displayName]);
-  }, [character]);
-
   const fetchCharacter = async () => {
     const characterInfo = await axios.get(
       `https://valorant-api.com/v1/agents/${id}`
@@ -57,6 +52,11 @@ const CharacterDetails = () => {
     setCharacter(characterInfo.data.data);
     setLoading(false);
   };
+
+  useEffect(() => {
+    fetchCharacter();
+    setVideo(videos[character.displayName]);
+  }, [character]);
 
   if (loading) {
     return (

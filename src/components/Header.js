@@ -8,25 +8,25 @@ const Header = () => {
     >
       <Link
         to="/"
-        className="text-2xl font-bold px-5 py-2 text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-500"
+        className="text-2xl font-bold px-5 py-2 duration-300 text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-500"
       >
         Home
       </Link>
       <Link
         to="/characters"
-        className="text-2xl font-bold px-5 py-2 text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-900"
+        className="text-2xl font-bold px-5 py-2 duration-300 text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-900"
       >
         Characters
       </Link>
       <Link
         to="/maps"
-        className="text-2xl font-bold px-5 py-2 text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-900"
+        className="text-2xl font-bold px-5 py-2 duration-300 text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-900"
       >
         Maps
       </Link>
       <Link
         to="/weapons"
-        className="text-2xl font-bold px-5 py-2 text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-900"
+        className="text-2xl font-bold px-5 py-2 duration-300 text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-900"
       >
         Weapons
       </Link>

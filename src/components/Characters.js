@@ -8,7 +8,7 @@ import { useSpring, animated } from "react-spring";
 const Characters = () => {
   const [characters, setCharacters] = useState([]);
   const [loading, setLoading] = useState(true);
-  const props = useSpring({ to: { opacity: 1 }, from: { opacity: 0.7 } });
+  const props = useSpring({ to: { opacity: 1 }, from: { opacity: 0.2 } });
 
   useEffect(() => {
     const fetchCharacters = async () => {
