@@ -6,7 +6,6 @@ const WeaponsCard = ({ weapon }) => {
     return arr[2];
   };
 
-  console.log(weapon);
   return (
     <div className="card grid text-center duration-1000 ease-in-out hover:scale-150 border-2">
       <div>

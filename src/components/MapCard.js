@@ -1,7 +1,6 @@
 import React from "react";
 
 const MapCard = ({ mapInfo }) => {
-  console.log(mapInfo);
   return (
     <div className="card grid border-2">
       <img src={mapInfo.splash} alt={mapInfo.displayName} />

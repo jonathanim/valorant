@@ -10,7 +10,7 @@ const Weapons = () => {
   useEffect(() => {
     fetchWeapons();
   }, []);
-  console.log(weapons);
+
   const fetchWeapons = async () => {
     const result = await axios.get("https://valorant-api.com/v1/weapons");
     setWeapons(result.data.data);
