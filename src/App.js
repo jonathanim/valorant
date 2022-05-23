@@ -9,7 +9,7 @@ import CharacterDetails from "./components/CharacterDetails";
 
 function App() {
   return (
-    <div className="container mx-auto">
+    <div className="w-full container mx-auto">
       <Header />
       <Routes>
         <Route path="/" element={<LandingPage />} />

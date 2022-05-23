@@ -8,9 +8,18 @@ const WeaponsCard = ({ weapon }) => {
 
   console.log(weapon);
   return (
-    <div className="card grid text-center">
+    <div className="card grid text-center duration-1000 ease-in-out hover:scale-150 border-2">
       <div>
-        <img src={weapon.displayIcon} alt={weapon.displayName} />
+        <img
+          src={weapon.displayIcon}
+          alt={weapon.displayName}
+          style={{
+            width: "100px",
+            height: "100px",
+            margin: "auto",
+            objectFit: "scale-down",
+          }}
+        />
       </div>
       <div>
         <h2>{weapon.displayName}</h2>

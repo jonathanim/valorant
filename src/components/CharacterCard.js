@@ -3,7 +3,7 @@ import React from "react";
 const CharacterCard = ({ character }) => {
   return (
     <div>
-      <div className="card border-2 p-5 m-3">
+      <div className="card transition-all border-2 p-5 m-3 hover:scale-105">
         <div
           className="image-ctn rounded"
           style={{

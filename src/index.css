@@ -10,3 +10,12 @@
     box-shadow: theme("boxShadow.xl");
   }
 }
+
+.card {
+  background-color: #1f5d6c;
+}
+
+body {
+  background-color: #30383f;
+  color: white;
+}
